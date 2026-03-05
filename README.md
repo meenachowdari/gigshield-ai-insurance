@@ -2,7 +2,6 @@
 
 ## Problem Statement
 Many delivery partners working with apps like Zomato, Swiggy, Blinkit, and Zepto depend on daily deliveries to earn money. However, their work is strongly affected by outside conditions such as heavy rain, extreme heat, floods, high pollution, or sudden curfews. During these situations they cannot complete deliveries and their earnings drop for that day or week.
-
 At present, most gig workers do not have a simple insurance system that protects them when they lose income because of these uncontrollable events. Our project focuses on solving this problem.
 
 ## Our Idea
