@@ -1,109 +1,119 @@
-# GigShield – AI Powered Insurance for Delivery Workers
+# GigShield – Income Protection for Delivery Partners
 
 ## Problem Statement
-Delivery partners working for platforms like Zomato, Swiggy, Amazon and Zepto often lose income because of external disruptions such as heavy rain, extreme heat, pollution or curfews. When these events occur, they cannot work and their daily earnings are reduced. Currently, there is no simple insurance system that protects their income during these situations.
+Many delivery partners working with apps like Zomato, Swiggy, Blinkit, and Zepto depend on daily deliveries to earn money. However, their work is strongly affected by outside conditions such as heavy rain, extreme heat, floods, high pollution, or sudden curfews. During these situations they cannot complete deliveries and their earnings drop for that day or week.
+
+At present, most gig workers do not have a simple insurance system that protects them when they lose income because of these uncontrollable events. Our project focuses on solving this problem.
 
 ## Our Idea
-We propose an AI-powered parametric insurance platform called **GigShield**.  
-This platform protects delivery workers from income loss caused by external disruptions like weather conditions or restricted zones.
+We plan to build a platform called **GigShield** that helps delivery workers protect their income when external disruptions stop them from working.
 
-The system automatically detects disruptions using external data (weather APIs, traffic data etc.). When a disruption occurs, the platform automatically triggers a claim and provides compensation to the worker.
+The platform will monitor real-world conditions such as weather or environmental alerts using external data sources. If a disruption crosses a defined limit (for example heavy rainfall or dangerous pollution levels), the system will automatically trigger a claim and provide compensation to the affected worker.
+
+The goal is to create a simple and automated insurance system where workers do not need to manually request claims.
 
 ## Target Persona
-Our primary users are **food delivery partners** working on platforms like:
+Our solution mainly focuses on **food delivery partners** who work for platforms such as:
+
 - Zomato
 - Swiggy
 - Blinkit
 - Zepto
 
-These workers depend on daily deliveries to earn money. If they cannot work because of external events, their income decreases.
+These workers rely on daily deliveries to earn money. When external problems occur, their work hours reduce and their income is affected.
 
 ## Workflow of the Application
-1. Delivery worker registers in the platform.
-2. Worker selects a weekly insurance plan.
-3. The AI system calculates the weekly premium based on risk factors.
-4. The system monitors external conditions such as weather or pollution.
-5. If a disruption is detected, the claim is automatically triggered.
-6. The worker receives compensation through digital payment.
+1. A delivery worker registers on the platform.
+2. The worker chooses a weekly insurance plan.
+3. The system evaluates the risk level of the worker’s location.
+4. Based on the risk, a weekly premium is calculated.
+5. The platform continuously checks weather and disruption data.
+6. When a disruption is detected, the system automatically activates a claim.
+7. The worker receives compensation through a digital payment method.
 
 ## Weekly Premium Model
-The insurance works on a **weekly pricing model**.
+Our insurance plan follows a **weekly pricing model** since gig workers usually earn money on a weekly basis.
 
 Example:
 
-- Weekly premium: ₹20 – ₹40
-- If disruption occurs, worker receives compensation of ₹200 – ₹500 depending on coverage.
+- Weekly premium: ₹20 – ₹40  
+- Compensation during disruption: ₹200 – ₹500
 
-The premium may change based on:
-- Location
-- Weather risk
-- Historical disruption data
+The premium amount can vary depending on:
+
+- Location of the worker
+- Weather risk in that area
+- Historical data about disruptions
+
+This makes the system fair and affordable for workers.
 
 ## Parametric Triggers
-The system automatically triggers claims when certain conditions occur:
+The platform will trigger claims automatically when certain conditions are detected. Some examples include:
 
-- Heavy Rainfall above threshold
-- Extreme Heat
-- Severe Air Pollution (High AQI)
-- Flood warnings
-- Government curfew or zone closure
+- Heavy rainfall beyond a defined limit
+- Extremely high temperature
+- Severe air pollution (high AQI levels)
+- Flood alerts
+- Government curfew or restricted delivery zones
 
-These triggers are detected using external APIs and data sources.
+These events can be detected using external APIs or simulated data during development.
 
 ## AI / ML Integration
-Artificial Intelligence will be used for:
+Artificial Intelligence will support different parts of the system.
 
 ### Risk Assessment
-Predict the risk level of a location based on historical weather and disruption data.
+AI models can analyze past weather data and identify which locations have higher risk of disruptions.
 
 ### Dynamic Premium Calculation
-Adjust the weekly premium depending on predicted risk.
+The weekly premium can be adjusted depending on predicted risk levels in a specific area.
 
 ### Fraud Detection
-Detect suspicious claims using anomaly detection and location validation.
+The system can detect unusual activity such as incorrect location data or repeated suspicious claims.
 
 ## Technology Stack
 
 Frontend  
-- React.js (Web Application)
+- React.js
 
 Backend  
-- Node.js / Express
+- Spring Boot (Java)
 
 Database  
-- MongoDB
+- MySQL
 
-APIs  
-- Weather API
-- Traffic API (mock data)
+External APIs  
+- Weather API  
+- Traffic or disruption data (mock data during development)
 
-Payments  
-- Razorpay (sandbox mode)
+Payment System  
+- Razorpay (test mode)
 
-AI/ML  
-- Python (Scikit-learn / simple ML models)
+AI / ML Tools  
+- Python (for basic prediction and fraud detection models)
 
 ## Development Plan
 
 Week 1
-- Research problem
-- Define persona
-- Design system architecture
-- Create UI prototype
+- Study the problem and understand gig workers' challenges
+- Select the target persona
+- Design the system architecture
+- Prepare a simple UI prototype
 
 Week 2
-- Develop basic registration system
+- Build the user registration module
 - Implement insurance policy creation
-- Create disruption detection logic
+- Develop disruption monitoring logic
 
 ## Future Scope
-- Expand to grocery and e-commerce delivery workers
-- Integrate real-time platform APIs
-- Improve AI risk prediction models
-- Provide dashboard for insurers and workers
+In the future, the platform can be expanded further by:
+
+- Supporting grocery and e-commerce delivery workers
+- Integrating real delivery platform APIs
+- Improving AI models for better risk prediction
+- Creating dashboards for workers and insurance providers
 
 ## Team Members
-1. G. Meena chowdari
-2. Suravarapu Amrutha Varshini
-3. Pabbati Sreeja
+1. G. Meena Chowdari  
+2. Suravarapu Amrutha Varshini  
+3. Pabbati Sreeja  
 4. Puvvada Lakshmi Sri Durga Niharika
