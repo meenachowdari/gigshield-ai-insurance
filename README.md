@@ -1,69 +1,109 @@
-# Project Overview
+# GigShield – AI Powered Insurance for Delivery Workers
 
-GigShield AI Insurance is a cutting-edge application designed to provide comprehensive insurance solutions for gig workers and freelancers. This project aims to streamline insurance processes, ensuring that users are adequately covered during their gig engagements.
+## Problem Statement
+Delivery partners working for platforms like Zomato, Swiggy, Amazon and Zepto often lose income because of external disruptions such as heavy rain, extreme heat, pollution or curfews. When these events occur, they cannot work and their daily earnings are reduced. Currently, there is no simple insurance system that protects their income during these situations.
 
-# Features
+## Our Idea
+We propose an AI-powered parametric insurance platform called **GigShield**.  
+This platform protects delivery workers from income loss caused by external disruptions like weather conditions or restricted zones.
 
-- **User-Friendly Interface**: Easy navigation for users.
-- **Real-Time Coverage Updates**: Users can check their coverage status in real-time.
-- **Flexible Policy Customization**: Tailored insurance policies to meet individual needs.
-- **AI-Powered Insights**: Leverage AI to provide personalized insurance recommendations.
+The system automatically detects disruptions using external data (weather APIs, traffic data etc.). When a disruption occurs, the platform automatically triggers a claim and provides compensation to the worker.
 
-# Tech Stack
+## Target Persona
+Our primary users are **food delivery partners** working on platforms like:
+- Zomato
+- Swiggy
+- Blinkit
+- Zepto
 
-- **Frontend**: [Frontend Framework Placeholder]
-- **Backend**: [Backend Framework Placeholder]
-- **Database**: [Database Placeholder]
-- **Cloud Services**: [Cloud Services Placeholder]
+These workers depend on daily deliveries to earn money. If they cannot work because of external events, their income decreases.
 
-# Local Development Steps
+## Workflow of the Application
+1. Delivery worker registers in the platform.
+2. Worker selects a weekly insurance plan.
+3. The AI system calculates the weekly premium based on risk factors.
+4. The system monitors external conditions such as weather or pollution.
+5. If a disruption is detected, the claim is automatically triggered.
+6. The worker receives compensation through digital payment.
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/meenachowdari/gigshield-ai-insurance.git
-   cd gigshield-ai-insurance
-   ```
-2. Install dependencies:
-   ```bash
-   npm install [or yarn install]
-   ```
-3. Start the development server:
-   ```bash
-   npm start [or yarn start]
-   ```
+## Weekly Premium Model
+The insurance works on a **weekly pricing model**.
 
-# Environment Variables Template
+Example:
 
-Create a `.env` file in the root directory and add the following variables:
-```
-DATABASE_URL=[Your Database URL]
-API_KEY=[Your API Key]
-``` 
+- Weekly premium: ₹20 – ₹40
+- If disruption occurs, worker receives compensation of ₹200 – ₹500 depending on coverage.
 
-# Scripts
+The premium may change based on:
+- Location
+- Weather risk
+- Historical disruption data
 
-- **Start Development Server**: `npm start`
-- **Run Tests**: `npm test`
-- **Build for Production**: `npm run build`
+## Parametric Triggers
+The system automatically triggers claims when certain conditions occur:
 
-# Deployment Notes
+- Heavy Rainfall above threshold
+- Extreme Heat
+- Severe Air Pollution (High AQI)
+- Flood warnings
+- Government curfew or zone closure
 
-To deploy the project, follow these steps:
-1. Build the application using the production command.
-2. Deploy to your chosen hosting platform (e.g., AWS, Heroku).
+These triggers are detected using external APIs and data sources.
 
-# Contribution Guidelines
+## AI / ML Integration
+Artificial Intelligence will be used for:
 
-1. Fork the repository.
-2. Create a feature branch: `git checkout -b feature/YourFeature`
-3. Make your changes and commit them: `git commit -m 'Add your message'`
-4. Push to the branch: `git push origin feature/YourFeature`
-5. Open a pull request.
+### Risk Assessment
+Predict the risk level of a location based on historical weather and disruption data.
 
-# License
+### Dynamic Premium Calculation
+Adjust the weekly premium depending on predicted risk.
 
-This project is licensed under the [License Placeholder].
+### Fraud Detection
+Detect suspicious claims using anomaly detection and location validation.
 
----
+## Technology Stack
 
-_Last updated: 2026-03-05 11:09:19 UTC_
+Frontend  
+- React.js (Web Application)
+
+Backend  
+- Node.js / Express
+
+Database  
+- MongoDB
+
+APIs  
+- Weather API
+- Traffic API (mock data)
+
+Payments  
+- Razorpay (sandbox mode)
+
+AI/ML  
+- Python (Scikit-learn / simple ML models)
+
+## Development Plan
+
+Week 1
+- Research problem
+- Define persona
+- Design system architecture
+- Create UI prototype
+
+Week 2
+- Develop basic registration system
+- Implement insurance policy creation
+- Create disruption detection logic
+
+## Future Scope
+- Expand to grocery and e-commerce delivery workers
+- Integrate real-time platform APIs
+- Improve AI risk prediction models
+- Provide dashboard for insurers and workers
+
+## Team Members
+1. G. Meena chowdari
+2. Suravarapu Amrutha Varshini
+3. Pabbati Sreeja
+4. Puvvada Lakshmi Sri Durga Niharika
